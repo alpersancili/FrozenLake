@@ -1,37 +1,45 @@
-# FrozenLake
-This project implements a Q-Learning agent to solve the FrozenLake-v1 environment from the OpenAI Gymnasium library. The agent navigates a slippery 8x8 grid world to reach the goal while avoiding holes.
+# Frozen Lake Q-Learning Agent
 
-Key features of the project include:
+This project implements a Q-Learning agent to solve the FrozenLake-v1 environment from OpenAI Gymnasium. The agent learns to navigate a slippery 8x8 grid world, aiming to reach the goal while avoiding holes, using reinforcement learning principles.
 
-Reinforcement Learning: Implements the Q-learning algorithm with an epsilon-greedy exploration strategy.
+Features
 
-Training and Testing: Allows toggling between training the agent (updating Q-table) and testing it with a pre-trained Q-table.
-
-Visualization: Plots cumulative rewards over episodes to show learning progress and saves the plot as a PNG file.
-
-Persistence: Saves and loads the Q-table using Python's pickle library for continued training or evaluation.
-
-Configurable Parameters: Adjust hyperparameters like learning rate, discount factor, and exploration rate for experimentation.
-
-
-How It Works:
-
-The agent interacts with the FrozenLake environment, taking actions and receiving rewards.
-
-During training, the Q-values are updated using the Bellman equation.
-
-The agent uses an epsilon-greedy strategy to balance exploration and exploitation.
-
-Training progress is visualized through cumulative rewards over the last 100 episodes.
+Q-Learning Implementation: Trains the agent using the Bellman equation for Q-value updates.
+Epsilon-Greedy Exploration: Balances exploration and exploitation, with a decaying epsilon for adaptive learning.
+Training & Testing Modes:
+Training: Initializes a new Q-table and updates it based on the agent’s interactions with the environment.
+Testing: Loads a pre-trained Q-table to evaluate the agent’s performance.
+Persistence: Q-table is serialized and saved using Python’s pickle library for reusability.
+Visualization: Generates a plot of cumulative rewards to track learning progress and saves it as a PNG file.
 
 
-Files:
+How It Works
 
-frozen_lake_q.py: The primary script containing the Q-learning implementation.
+Agent Setup: The agent interacts with the FrozenLake environment, which includes 64 discrete states and 4 possible actions.
+Training Phase:
+Uses Q-Learning to update the Q-table based on the agent’s actions, rewards, and the environment's feedback.
+Adapts exploration with epsilon decay and optimizes long-term rewards with a discount factor (gamma).
+Testing Phase:
+Evaluates the agent's performance using a pre-trained Q-table.
+Performance Monitoring:
+Plots the agent’s cumulative rewards over episodes to visualize learning progress.
 
+
+Technical Details
+
+Algorithm: Q-Learning
+Libraries Used: Python, NumPy, Matplotlib, Gymnasium, Pickle
+Key Parameters:
+Learning Rate (Alpha): 0.9
+Discount Factor (Gamma): 0.9
+Exploration Rate (Epsilon): Starts at 1.0 and decays over time
+
+
+Project Files
+
+frozen_lake_q.py: Contains the full implementation of the Q-Learning agent.
 frozen_lake8x8.png: Visualization of cumulative rewards during training.
-
 frozen_lake8x8.pkl: Serialized Q-table for testing or resuming training.
 
-https://github.com/user-attachments/assets/0e8cd789-ffb2-401c-aa81-c7f31eb97c1e
+https://github.com/user-attachments/assets/0ae6018a-90e0-4ddb-899d-a79a2655edfa
 
