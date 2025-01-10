@@ -4,17 +4,26 @@ This project implements a Q-Learning agent to solve the FrozenLake-v1 environmen
 Key features of the project include:
 
 Reinforcement Learning: Implements the Q-learning algorithm with an epsilon-greedy exploration strategy.
+
 Training and Testing: Allows toggling between training the agent (updating Q-table) and testing it with a pre-trained Q-table.
+
 Visualization: Plots cumulative rewards over episodes to show learning progress and saves the plot as a PNG file.
+
 Persistence: Saves and loads the Q-table using Python's pickle library for continued training or evaluation.
+
 Configurable Parameters: Adjust hyperparameters like learning rate, discount factor, and exploration rate for experimentation.
+
 
 How It Works:
 
 The agent interacts with the FrozenLake environment, taking actions and receiving rewards.
+
 During training, the Q-values are updated using the Bellman equation.
+
 The agent uses an epsilon-greedy strategy to balance exploration and exploitation.
+
 Training progress is visualized through cumulative rewards over the last 100 episodes.
+
 
 Files:
 
