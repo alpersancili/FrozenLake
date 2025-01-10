@@ -19,3 +19,5 @@ frozen_lake_q.py: The primary script containing the Q-learning implementation.
 frozen_lake8x8.png: Visualization of cumulative rewards during training.
 frozen_lake8x8.pkl: Serialized Q-table for testing or resuming training.
 
+https://github.com/user-attachments/assets/0e8cd789-ffb2-401c-aa81-c7f31eb97c1e
+
