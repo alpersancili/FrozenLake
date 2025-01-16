@@ -1,4 +1,4 @@
-# Frozen Lake Q-Learning Agent
+# Frozen Lake Q-Learning Project
 
 This project implements a Q-Learning agent to solve the FrozenLake-v1 environment from OpenAI Gymnasium. The agent learns to navigate a slippery 8x8 grid world, aiming to reach the goal while avoiding holes, using reinforcement learning principles.
 
