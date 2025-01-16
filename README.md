@@ -2,7 +2,7 @@
 
 This project implements a Q-Learning agent to solve the FrozenLake-v1 environment from OpenAI Gymnasium. The agent learns to navigate a slippery 8x8 grid world, aiming to reach the goal while avoiding holes, using reinforcement learning principles.
 
-Features
+FEATURES
 
 Q-Learning Implementation: Trains the agent using the Bellman equation for Q-value updates.
 Epsilon-Greedy Exploration: Balances exploration and exploitation, with a decaying epsilon for adaptive learning.
@@ -12,8 +12,7 @@ Testing: Loads a pre-trained Q-table to evaluate the agent’s performance.
 Persistence: Q-table is serialized and saved using Python’s pickle library for reusability.
 Visualization: Generates a plot of cumulative rewards to track learning progress and saves it as a PNG file.
 
-
-How It Works
+HOW IT WORKS
 
 Agent Setup: The agent interacts with the FrozenLake environment, which includes 64 discrete states and 4 possible actions.
 Training Phase:
@@ -24,8 +23,7 @@ Evaluates the agent's performance using a pre-trained Q-table.
 Performance Monitoring:
 Plots the agent’s cumulative rewards over episodes to visualize learning progress.
 
-
-Technical Details
+TECHNICAL DETAILS
 
 Algorithm: Q-Learning
 Libraries Used: Python, NumPy, Matplotlib, Gymnasium, Pickle
@@ -33,7 +31,6 @@ Key Parameters:
 Learning Rate (Alpha): 0.9
 Discount Factor (Gamma): 0.9
 Exploration Rate (Epsilon): Starts at 1.0 and decays over time
-
 
 Project Files
 
