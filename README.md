@@ -35,7 +35,9 @@ Exploration Rate (Epsilon): Starts at 1.0 and decays over time
 Project Files
 
 frozen_lake_q.py: Contains the full implementation of the Q-Learning agent.
+
 frozen_lake8x8.png: Visualization of cumulative rewards during training.
+
 frozen_lake8x8.pkl: Serialized Q-table for testing or resuming training.
 
 https://github.com/user-attachments/assets/0ae6018a-90e0-4ddb-899d-a79a2655edfa
